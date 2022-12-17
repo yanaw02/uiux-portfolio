@@ -18,11 +18,12 @@
             </div>
             
             <div class="name">
-                USING REACT
+                REACT PROJECT
                 <div class="navbar">
-                    <a href="index.html" class="navbar-item">section a</a>
-                    <a href="about-me.html" class="navbar-item">section b</a>
-                    <a href="about-me.html" class="navbar-item">section c</a>
+                    <a href="#context" class="navbar-item">context</a>
+                    <a href="#planning" class="navbar-item">plan</a>
+                    <a href="#process" class="navbar-item">process</a>
+                    <a href="#result" class="navbar-item">result</a>
                 </div>
             </div>
         </div>
@@ -31,8 +32,78 @@
                 <!-- <img src="assets/profile.jpg" alt="a drawing of myself" style="float:right; padding:0 0 20px 100px; max-width:100%; max-height: 450px;"> -->
                 <h2>Fantasy Magic Shop <br> Item Sorter</h2>
             </div>
-            <div class="main-text">
+            <div class="main-text" id="context">
+                <h3>Using React</h3>
+                <p>
+                    I have always loved playing Dungeons and Dragons with my friends, 
+                    however, sometimes with the amount of magic items that our players 
+                    receive, the inventory gets a bit hectic and we lose track of which 
+                    items are attunement, which heal, and which are more utility based.
+                </p>
+                <p>
+                    Given all of that, I decided to make a little magic item card sorter 
+                    using React! 
+                </p>
+            </div>
+            <div class="main-text" id="planning">
+                <h3>Planning Functionalities and Design</h3>
+                <p>
+                    To be able to quickly access magic items with certain properties, 
+                    I needed some sort of way to filter and sort the items. Furthermore, 
+                    I think it'd be useful to be able to mark down certain magic items 
+                    into a list of references, so players can pull it up quickly. 
+                </p>
+                <p>
+                    In Dungeons and Dragons, magic items can be sorted by their 
+                    cost in gold, their rarity, or simply their name. They can be 
+                    consumable potions or oils, weapons, or just artifacts. They 
+                    can heal, turn you into a giant creature, let you walk on walls, 
+                    and give you permenant buffs!
+                </p>
+                <p>
+                    Although I would have liked to include all of those features, 
+                    I ended up having only two layerable filtering methods, one 
+                    which filters only the items with the intersection of all tags, and 
+                    one which filters out the union.
+                </p>
+            </div>
+            <div class="main-text" id="process">
+                <h3>Components and Interactions</h3>
+                <p>
+                    The most visually representative way to allow the user to interact 
+                    with the interfact was to simply have the different sorting 
+                    function options be represented by a radio button, and the filtering 
+                    options be represented by a checkbox. The aggregate of adding 
+                    items to an inventory can be done with a button on each item card.
+                </p>
+                <p>
+                    I created a component for a magic item card ported from a json file, 
+                    which allows me to easily add or delete items in the whole list, 
+                    as well as a component for each filtering and sorting option.
+                </p>
+            </div>
+            <div class="main-text" id="result" style="margin-bottom: 2%;">
+                <h3>Result</h3>
+                <p>
+                    And with that, I created my Dungeons and Dragons magic item 
+                    reference sorter! The code is here for anyone to quickly use 
+                    and access. I hope this helps for anyone who plays DnD as much 
+                    as I do!
+                </p>
+                <h3 style="width:100%; text-align:center; background-color: white;">
+                    <a href="https://tiredpig002.github.io/react/" target="_blank">
+                        ✨ check out the ultimate magic item reference! ✨
+                    </a>
+                </h3>
+                <div>
+                    <img src="assets/dnd-item/screenshot.jpg" alt="" style="width:90%; padding:0 5%;background-color: black;">
+                </div>
                 
+                <h4 style="width:100%; background-color:white; text-align: center;">
+                    <a href="https://tiredpig002.github.io/redesigned-website/" target="_blank">
+                        ✨ And here's the code behind it! ✨
+                    </a>
+                </h4>
             </div>
         </div>
     </body>
